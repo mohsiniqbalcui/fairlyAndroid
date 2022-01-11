@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">fairlyAndroid</string>
+    <string name="fragment_login_password_hint">Enter Password</string>
+    <string name="profile1_title">Enter Your Date of Birth</string>
+    <string name="los_angeles">Los Angeles</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="city_name">City Name</string>
+    <string name="jerome_brooks">Jerome Brooks</string>
+    <string name="create_your_network">Create your network</string>
+    <string name="term"> <u>Term and Conditions</u>.</string>
+    <string name="profile1_details">Fairest requires this information as a security measure, you do not have to display your birthday in your profile.</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="next">Next</string>
+    <string name="profile_setup">Profile Setup</string>
+    <string name="image_icon">image icon</string>
+    <string name="profile2_title_details">The Fairest referral network is organized by business categories and the professions within them. Learn more</string>
+    <string name="profile2_title">Choose Categroy that fits your Bussiness Best</string>
+    <string name="profile3_title">Finish Profile Setup</string>
+    <string name="profile3_details">This info will appear on your profile page</string>
+    <string name="et_service_message">Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod.</string>
+    <string name="bussiness_ownner">Bussiness Ownner</string>
+    <string name="your_title">Your title</string>
+    <string name="computer_science">computer Science</string>
+    <string name="your_profession">Your Profession</string>
+    <string name="your_service_area">Your Service Area</string>
+
+</resources>

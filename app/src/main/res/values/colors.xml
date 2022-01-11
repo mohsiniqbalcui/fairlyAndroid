@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="unSelectedFilterColor">#F1F3F6</color>
+    <color name="greenBgFieldsHintColor">#99FFFFFF</color>
+
+    <color name="unCheckedToggleGrayColor">#F0F0F0</color>
+    <color name="greyTextColor">#707070</color>
+    <color name="hint">#969696</color>
+    <color name="gray">#EEF0F1</color>
+    <color name="hintColorGray">#4a4a4a</color>
+    <color name="passowrdDetail">#555A5A</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="grayAppTextColor">#9B9B9B</color>
+    <color name="red">#F82735</color>
+    <color name="package_price">#999999</color>
+    <color name="gray_c">#8A8A8A</color>
+    <color name="spinner_color">#FAFAFA</color>
+</resources>

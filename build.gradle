@@ -1,0 +1,70 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext.kotlin_version = "1.3.72"
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:4.1.3"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+
+    }
+    ext {
+        // App version
+        androidApplicationId = "com.android.fairlyandroid"
+
+        // App dependencies
+        multiDexVersion = '1.0.3'
+        constraintLayoutVersion = '2.0.0-alpha1'
+
+        // Image Loading
+        glideVersion = "4.9.0"
+
+
+        //Facebook
+        facebookSdkVersion = "4.37.0"
+
+        supportDependencies = [
+                appCompatV7     : 'androidx.appcompat:appcompat:1.0.0',
+                recyclerView    : 'androidx.recyclerview:recyclerview:1.0.0',
+                design          : 'com.google.android.material:material:1.0.0',
+                cardView        : 'androidx.cardview:cardview:1.0.0',
+                multiDex        : 'androidx.multidex:multidex:2.0.0',
+                constraintLayout: 'androidx.constraintlayout:constraintlayout:1.1.3',
+                glideSdk        : "com.github.bumptech.glide:glide:${glideVersion}",
+                customText      : 'com.intuit.sdp:sdp-android:1.0.6',
+                VerificationET  : 'com.justkiddingbaby:vercodeedittext:1.1.0',
+                ImagePicker     : "com.karumi:dexter:5.0.0",
+                ImageCrop       : 'com.github.yalantis:ucrop:2.2.2',
+                ImageSlider     : 'com.github.mohan-dev1248:PosterSlider:1.0.2',
+                gif             : 'pl.droidsonroids.gif:android-gif-drawable:1.2.12',
+                placesApi       : 'com.google.android.libraries.places:places:2.3.0',
+                googleMaps      : 'com.google.maps.android:android-maps-utils:1.0.0',
+                ted             : 'gun0912.ted:tedpermission:2.2.3',
+                stripeGoogle    : 'com.stripe:stripe-android:8.7.0',
+                stripe          : 'com.stripe:stripe-java:19.35.0',
+                crashlytics     : 'com.google.firebase:firebase-crashlytics-ktx:17.2.1',
+                analytics       : 'com.google.firebase:firebase-analytics-ktx:17.5.0',
+                showMoreText    : 'com.github.mahimrocky:ShowMoreText:1.0.2'
+
+        ]
+
+
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

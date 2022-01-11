@@ -1,0 +1,389 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_15sdp">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/icon"
+                app:layout_constraintBottom_toTopOf="@id/tvTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                />
+
+            <ImageView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center_horizontal"
+                android:src="@drawable/fairest"
+                android:text="fairest"
+                android:textColor="@color/black"
+                android:textSize="50sp"
+                app:layout_constraintTop_toBottomOf="@id/btnBack" />
+
+            <TextView
+                android:id="@+id/tv_detail_smv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center_horizontal"
+                android:text="Create new account"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+            <TextView
+                android:id="@+id/tv_des2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Enter your details below to get started"
+                android:textColor="@color/hintColorGray"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_detail_smv" />
+
+            <Button
+                android:id="@+id/btnloginApple"
+                android:layout_width="match_parent"
+                android:layout_height="48sp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/btn_outline_black"
+                android:drawableStart="@drawable/mac"
+                android:drawablePadding="@dimen/_10sdp"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="start|center_vertical"
+                android:paddingStart="@dimen/_49sdp"
+                android:text="Continue with Apple ID"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_des2" />
+
+            <Button
+                android:id="@+id/btnloginGoogle"
+                android:layout_width="match_parent"
+                android:layout_height="48sp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/btn_outline_black"
+                android:drawableStart="@drawable/google"
+                android:drawablePadding="@dimen/_10sdp"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="start|center_vertical"
+                android:paddingStart="@dimen/_49sdp"
+                android:paddingEnd="@dimen/_40sdp"
+                android:text="Continue with Google"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnloginApple" />
+
+            <Button
+                android:id="@+id/btnloginFacebook"
+                android:layout_width="match_parent"
+                android:layout_height="48sp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/btn_outline_black"
+                android:drawableStart="@drawable/facebook"
+                android:drawablePadding="@dimen/_10sdp"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="start|center_vertical"
+                android:paddingStart="@dimen/_49sdp"
+                android:text="Continue with Facebook"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnloginGoogle" />
+
+            <View
+                android:id="@+id/seprateor"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/hintColorGray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnloginFacebook" />
+
+            <TextView
+                android:id="@+id/tvtitle2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center_horizontal"
+                android:text="Sign up with email"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:layout_constraintTop_toBottomOf="@+id/seprateor" />
+
+            <TextView
+                android:id="@+id/tv_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Email"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_forget_password" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/gray_button_round"
+                android:fontFamily="@font/montserrat"
+                android:hint="Enter Email"
+                android:inputType="number"
+                android:maxLength="16"
+                android:paddingStart="@dimen/_5sdp"
+                android:singleLine="true"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_number" />
+
+            <TextView
+                android:id="@+id/tv_password_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Your Name"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvtitle2" />
+
+            <EditText
+                android:id="@+id/et_forget_password"
+                android:layout_width="match_parent"
+                android:layout_height="42sp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/gray_button_round"
+                android:fontFamily="@font/montserrat"
+                android:hint="@string/jerome_brooks"
+                android:paddingStart="@dimen/_5sdp"
+                android:paddingEnd="@dimen/_5sdp"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_password_label" />
+
+
+            <TextView
+                android:id="@+id/tv_number3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="City"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_email" />
+
+            <TextView
+                android:id="@+id/tv_forgetPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_70sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Country"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_email" />
+
+            <EditText
+                android:id="@+id/et_cityName"
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="42sp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/gray_button_round"
+                android:fontFamily="@font/montserrat"
+                android:hint="@string/city_name"
+                android:inputType="number"
+                android:maxLength="16"
+                android:paddingStart="@dimen/_5sdp"
+                android:singleLine="true"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_number3" />
+
+            <EditText
+                android:id="@+id/et_countryName"
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="42sp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/gray_button_round"
+                android:fontFamily="@font/montserrat"
+                android:hint="Enter country"
+                android:inputType="number"
+                android:maxLength="16"
+                android:paddingStart="@dimen/_5sdp"
+                android:singleLine="true"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_number3" />
+
+            <TextView
+                android:id="@+id/tv_password_labels"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Password"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_cityName" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etPasswordLayout"
+                android:layout_width="match_parent"
+                android:layout_height="42sp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:hintEnabled="false"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_password_labels"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gray_button_round"
+                    android:hint="@string/fragment_login_password_hint"
+                    android:inputType="textPassword"
+                    android:textSize="14sp"
+                    android:maxLength="16"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_confirm_password_labels"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Confrim Password"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etPasswordLayout" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etConfirmPasswordLayout"
+                android:layout_width="match_parent"
+                android:layout_height="42sp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:hintEnabled="false"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_confirm_password_labels"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etconfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gray_button_round"
+                    android:hint="Repeat Password"
+                    android:inputType="textPassword"
+                    android:textSize="14sp"
+                    android:maxLength="16"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnForgetpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/check_price_bg_black"
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etConfirmPasswordLayout" />
+
+            <TextView
+                android:id="@+id/tv_des3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Enter your details below to get started"
+                android:textColor="@color/gray_c"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnForgetpassword"
+                />
+
+            <TextView
+                android:id="@+id/tv_des4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/term"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:textColor="@color/hintColorGray"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_des3"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>
